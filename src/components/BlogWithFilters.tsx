@@ -7,10 +7,10 @@ const BlogWithFilters: React.FC = () => {
 
   const categories = [
     { id: 'all', name: 'Todos', count: 12 },
-    { id: 'imoveis', name: 'Imóveis', count: 5 },
-    { id: 'energia', name: 'Energia', count: 3 },
+    { id: 'imoveis', name: 'Imobiliário', count: 5 },
+    { id: 'credito', name: 'Crédito Habitação', count: 2 },
+    { id: 'certificacao', name: 'Certificado Energético', count: 1 },
     { id: 'seguros', name: 'Seguros', count: 2 },
-    { id: 'alarmes', name: 'Alarmes', count: 2 }
   ];
 
   const blogPosts = [

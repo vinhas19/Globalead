@@ -76,12 +76,13 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate, onPropertySelect }) => 
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
+              className="text-center"
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-center">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
                 Caminhamos consigo<br />
                 <span className="text-blue-300">lado a lado</span>
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-4xl mx-auto">
+              <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-4xl mx-auto text-center">
                 A Globalead Portugal é uma empresa inovadora que atua como intermediária, oferecendo soluções personalizadas em diversos setores. Com foco na comodidade, segurança e eficiência, simplificamos processos e proporcionamos um apoio gratuito, garantindo um serviço adaptado às reais necessidades e exigências de cada cliente.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

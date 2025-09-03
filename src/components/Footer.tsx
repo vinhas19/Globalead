@@ -15,7 +15,6 @@ const Footer: React.FC = () => {
                 className="h-18 w-auto"
               />
             </div>
-            <h3 className="text-xl font-bold mb-4">Entre em Contacto!</h3>
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-blue-400" />
@@ -27,6 +26,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             
+            <h3 className="text-xl font-bold mb-4 mt-6">Entre em Contacto!</h3>
             {/* Social Media */}
             <div className="flex space-x-4 mt-6">
               <Facebook className="h-6 w-6 text-blue-400 hover:text-blue-300 cursor-pointer transition-colors" />
@@ -35,30 +35,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          {/* Latest News */}
-          <div className="lg:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Últimas Notícias</h3>
-            <div className="space-y-3">
-              <div>
-                <p className="text-sm text-gray-300 hover:text-white cursor-pointer transition-colors">
-                  Garantia pública sobe risco de incumprimento (e tende a elevar juros)
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-300 hover:text-white cursor-pointer transition-colors">
-                  Como organizar a casa no inverno: dicas para ter tudo à mão
-                </p>
-              </div>
-              <div>
-                <p className="text-sm text-gray-300 hover:text-white cursor-pointer transition-colors">
-                  Preço da eletricidade aumenta 2,1% no mercado regulado em 2025
-                </p>
-              </div>
-            </div>
-          </div>
-
           {/* Newsletter */}
-          <div>
+          <div className="lg:col-span-3">
             <h3 className="text-xl font-bold mb-4">Receba as últimas novidades!</h3>
             <form className="space-y-3">
               <input

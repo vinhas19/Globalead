@@ -196,13 +196,6 @@ const SeguroPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/template-dos-inta-2.png" 
-              alt="Instagram Template" 
-              className="w-64 h-auto rounded-lg shadow-lg"
-            />
-          </div>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Faça uma simulação sem compromisso!
@@ -227,36 +220,44 @@ const SeguroPage: React.FC = () => {
             <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
                 type="text"
-                placeholder="Nome*"
+                placeholder="Nome:"
                 className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="email"
-                placeholder="Email*"
+                placeholder="Email:"
                 className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <input
                 type="tel"
-                placeholder="Contacto*"
+                placeholder="Contacto:"
                 className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
               <select className="px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                <option>Preferência*</option>
+                <option>Meio de Contacto:</option>
                 <option>Email</option>
                 <option>Telefone</option>
+                <option>WhatsApp</option>
               </select>
               <input
                 type="text"
-                placeholder="Assunto"
+                placeholder="Assunto:"
                 className="md:col-span-2 px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
-              <textarea
-                placeholder="Mensagem"
-                rows={4}
+              <input
+                type="text"
+                placeholder="Horário:"
                 className="md:col-span-2 px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              ></textarea>
+              />
 
               <div className="md:col-span-2">
+                <label className="flex items-start text-sm text-gray-700 mb-4">
+                  <input type="checkbox" className="mt-1 mr-2" />
+                  Sim, aceito os termos e condições indicados pela Globalead Portugal.
+                </label>
+                <p className="text-xs text-gray-600 mb-6">
+                  Os dados submetidos através deste formulário de contacto serão tratados em conformidade com a legislação em vigor sobre dados pessoais e o Regulamento Geral da Proteção de Dados (UE) 2016/679.
+                </p>
                 <button
                   type="submit"
                   className="w-full bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors duration-300"

@@ -62,6 +62,12 @@ const SobrePage: React.FC = () => {
       {/* About Content */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Ajudamos a tomar decisões inteligentes
+            </h2>
+          </div>
+          
           <div className="prose prose-lg max-w-none">
             <p className="text-gray-700 leading-relaxed mb-6">
               A Globalead destaca-se pela sua abordagem integrada e inovadora, atuando como intermediária para oferecer soluções personalizadas que garantem conforto, segurança e eficiência em todos os processos. Fundada para preencher uma lacuna no mercado, a empresa é pioneira na gestão e acompanhamento de clientes em múltiplas áreas, colocando as necessidades de cada um no centro das suas operações.
@@ -82,8 +88,42 @@ const SobrePage: React.FC = () => {
         </div>
       </section>
 
+      {/* Video Presentation */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Uma Palavra do Nosso Fundador
+            </h2>
+          </div>
+          
+          <div className="bg-gray-200 rounded-xl overflow-hidden">
+            <div className="aspect-video flex items-center justify-center">
+              <div className="text-center">
+                <div className="bg-blue-600 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <p className="text-gray-600">Vídeo de apresentação em breve</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Globalead */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Quais os objetivos da Globalead Portugal?
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -194,20 +234,8 @@ const SobrePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-8 items-start">
-            {/* Instagram Template - Lado Esquerdo */}
-            <div className="lg:w-1/3 flex justify-center">
-              <img 
-                src="/template-dos-inta-2.png" 
-                alt="Instagram Template" 
-                className="w-96 h-auto rounded-lg shadow-lg"
-              />
-            </div>
-
-            {/* Formulário - Lado Direito */}
-            <div className="lg:w-2/3">
-              <ContactForm page="sobre" />
-            </div>
+          <div className="bg-white p-8 rounded-xl">
+            <ContactForm page="sobre" />
           </div>
         </div>
       </section>

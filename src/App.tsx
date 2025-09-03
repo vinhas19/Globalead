@@ -12,11 +12,11 @@ import EnergiaPage from './pages/EnergiaPage';
 import SeguroPage from './pages/SeguroPage';
 import CreditoPage from './pages/CreditoPage';
 import CertificacaoPage from './pages/CertificacaoPage';
-import AdminPage from './pages/AdminPage';
 import BlogPage from './pages/BlogPage';
 import ContactosPage from './pages/ContactosPage';
 import PropertyListPage from './pages/PropertyListPage';
 import PropertyDetailPage from './pages/PropertyDetailPage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');

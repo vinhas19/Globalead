@@ -224,13 +224,6 @@ const AlarmesPage: React.FC = () => {
       {/* CTA Section */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-center mb-8">
-            <img 
-              src="/template-dos-inta-2.png" 
-              alt="Instagram Template" 
-              className="w-64 h-auto rounded-lg shadow-lg"
-            />
-          </div>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Faça uma simulação sem compromisso!
@@ -301,7 +294,7 @@ const AlarmesPage: React.FC = () => {
                   type="submit"
                   className="w-full bg-blue-600 text-white font-semibold py-3 px-8 rounded-lg hover:bg-blue-700 transition-colors duration-300"
                 >
-                  Enviar Pedido
+                  Enviar Mensagem
                 </button>
               </div>
             </form>
