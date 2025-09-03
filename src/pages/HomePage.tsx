@@ -14,9 +14,10 @@ import { trackEvent } from '../components/Analytics';
 
 interface HomePageProps {
   onNavigate: (page: string) => void;
+  onPropertySelect: (propertyId: number) => void;
 }
 
-const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
+const HomePage: React.FC<HomePageProps> = ({ onNavigate, onPropertySelect }) => {
   const services = [
     {
       icon: <Home className="h-12 w-12 text-blue-600" />,
@@ -56,24 +57,34 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-20"></div>
+      <section className="relative bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white overflow-hidden min-h-screen flex items-center">
+        {/* Video Background */}
+        <div className="absolute inset-0">
+          <video
+            autoPlay
+            muted
+            loop
+            className="w-full h-full object-cover"
+          >
+            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-center">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                O seu parceiro de
-                <span className="text-blue-300"> confiança</span>
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-center">
+                Caminhamos consigo<br />
+                <span className="text-blue-300">lado a lado</span>
               </h1>
-              <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed">
-                Especialistas em imóveis, seguros, energia e alarmes. 
-                Simplificamos a sua vida com soluções personalizadas e acompanhamento dedicado.
+              <p className="text-xl md:text-2xl text-blue-100 mb-8 leading-relaxed max-w-4xl mx-auto">
+                A Globalead Portugal é uma empresa inovadora que atua como intermediária, oferecendo soluções personalizadas em diversos setores. Com foco na comodidade, segurança e eficiência, simplificamos processos e proporcionamos um apoio gratuito, garantindo um serviço adaptado às reais necessidades e exigências de cada cliente.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={() => handleServiceClick('imoveis')}
                   className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-300 inline-flex items-center justify-center"
@@ -87,28 +98,6 @@ const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 >
                   Contactar-nos
                 </button>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <LazyImage
-                src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Casa de sonho"
-                className="rounded-xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-                <div className="flex items-center">
-                  <Star className="h-6 w-6 text-yellow-400 mr-2" />
-                  <div>
-                    <div className="font-bold text-gray-900">5.0</div>
-                    <div className="text-sm text-gray-600">247 avaliações</div>
-                  </div>
-                </div>
               </div>
             </motion.div>
           </div>

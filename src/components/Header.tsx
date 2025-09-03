@@ -15,7 +15,6 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
     { name: 'TV NET VOZ', page: 'tv-net-voz' },
     { name: 'Energia', page: 'energia' },
     { name: 'Seguros', page: 'seguros' },
-    { name: 'Alarmes', page: 'alarmes' },
     { name: 'Blog', page: 'blog' },
     { name: 'Contactos', page: 'contactos' }
   ];
